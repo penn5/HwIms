@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: HwImsNew.apk
+apkFileName: HwIms.apk
 compressionType: false
 doNotCompress:
 - arsc
@@ -8,8 +8,8 @@ packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
 sdkInfo:
-  minSdkVersion: '18'
-  targetSdkVersion: '23'
+  minSdkVersion: '26'
+  targetSdkVersion: '26'
 sharedLibrary: false
 unknownFiles: {}
 usesFramework:
