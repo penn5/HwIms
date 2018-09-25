@@ -3582,11 +3582,11 @@
 
     .line 2138
     .local v0, "state":I
-    invoke-static {}, Lcom/android/internal/telephony/HwTelephonyFactory;->getHwVolteChrManager()Lcom/android/internal/telephony/HwVolteChrManager;
+#    invoke-static {}, Lcom/android/internal/telephony/HwTelephonyFactory;->getHwVolteChrManager()Lcom/android/internal/telephony/HwVolteChrManager;
 
-    move-result-object v1
+#    move-result-object v1
 
-    invoke-interface {v1, v0}, Lcom/android/internal/telephony/HwVolteChrManager;->notifySrvccState(I)V
+#    invoke-interface {v1, v0}, Lcom/android/internal/telephony/HwVolteChrManager;->notifySrvccState(I)V
 
     .line 2140
     .end local v0    # "state":I
@@ -3990,11 +3990,11 @@
 
     .line 1942
     :cond_1
-    invoke-static {}, Lcom/android/internal/telephony/HwTelephonyFactory;->getHwVolteChrManager()Lcom/android/internal/telephony/HwVolteChrManager;
+#    invoke-static {}, Lcom/android/internal/telephony/HwTelephonyFactory;->getHwVolteChrManager()Lcom/android/internal/telephony/HwVolteChrManager;
 
-    move-result-object v9
+#    move-result-object v9
 
-    invoke-interface {v9, v2, v8, v0}, Lcom/android/internal/telephony/HwVolteChrManager;->triggerNoServiceDuringCallEvent(Lcom/android/internal/telephony/Call;Lcom/android/internal/telephony/Call;Lcom/android/internal/telephony/Call;)V
+#    invoke-interface {v9, v2, v8, v0}, Lcom/android/internal/telephony/HwVolteChrManager;->triggerNoServiceDuringCallEvent(Lcom/android/internal/telephony/Call;Lcom/android/internal/telephony/Call;Lcom/android/internal/telephony/Call;)V
 
     .line 1947
     :cond_2
@@ -4597,20 +4597,22 @@
     if-eq v15, v14, :cond_2
 
     .line 1465
-    invoke-static {}, Lcom/android/internal/telephony/HwTelephonyFactory;->getHwVolteChrManager()Lcom/android/internal/telephony/HwVolteChrManager;
+#    invoke-static {}, Lcom/android/internal/telephony/HwTelephonyFactory;->getHwVolteChrManager()Lcom/android/internal/telephony/HwVolteChrManager;
 
-    move-result-object v14
+#    move-result-object v14
 
     check-cast v10, Lcom/android/internal/telephony/imsphone/ImsPhone;
 
     .end local v10    # "imsphone":Lcom/android/internal/telephony/Phone;
-    invoke-interface {v14, v10}, Lcom/android/internal/telephony/HwVolteChrManager;->triggerImsRegFailEvent(Lcom/android/internal/telephony/imsphone/ImsPhone;)Z
+#    invoke-interface {v14, v10}, Lcom/android/internal/telephony/HwVolteChrManager;->triggerImsRegFailEvent(Lcom/android/internal/telephony/imsphone/ImsPhone;)Z
 
-    move-result v14
+#    move-result v14
+
+    const v14, false
 
     xor-int/lit8 v14, v14, 0x1
 
-    invoke-static {v14}, Lcom/huawei/ims/ImsServiceSub;->-set3(Z)Z
+#    invoke-static {v14}, Lcom/huawei/ims/ImsServiceSub;->-set3(Z)Z
 
     goto/16 :goto_0
 
@@ -5200,11 +5202,11 @@
     if-ne v15, v14, :cond_0
 
     .line 1577
-    invoke-static {}, Lcom/android/internal/telephony/HwTelephonyFactory;->getHwVolteChrManager()Lcom/android/internal/telephony/HwVolteChrManager;
+#    invoke-static {}, Lcom/android/internal/telephony/HwTelephonyFactory;->getHwVolteChrManager()Lcom/android/internal/telephony/HwVolteChrManager;
 
-    move-result-object v14
+#    move-result-object v14
 
-    invoke-interface {v14}, Lcom/android/internal/telephony/HwVolteChrManager;->notifyCSRedial()V
+#    invoke-interface {v14}, Lcom/android/internal/telephony/HwVolteChrManager;->notifyCSRedial()V
 
     goto/16 :goto_0
 

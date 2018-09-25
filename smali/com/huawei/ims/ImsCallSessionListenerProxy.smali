@@ -190,10 +190,10 @@
 
 
 # virtual methods
-.method public callSessionConferenceExtendFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionConferenceExtendFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 478
@@ -251,10 +251,10 @@
     return-void
 .end method
 
-.method public callSessionDeflectFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionDeflectFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 243
@@ -276,12 +276,12 @@
     return-void
 .end method
 
-.method public callSessionHandover(Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+.method public callSessionHandover(Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
     .locals 6
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
     .param p2, "srcAccessTech"    # I
     .param p3, "targetAccessTech"    # I
-    .param p4, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p4, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 169
@@ -305,7 +305,7 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/huawei/ims/ImsCallSessionListenerProxy$6;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+    invoke-direct/range {v0 .. v5}, Lcom/huawei/ims/ImsCallSessionListenerProxy$6;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
 
     .line 184
     .local v0, "r":Ljava/lang/Runnable;
@@ -317,12 +317,12 @@
     return-void
 .end method
 
-.method public callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+.method public callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
     .locals 6
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
     .param p2, "srcAccessTech"    # I
     .param p3, "targetAccessTech"    # I
-    .param p4, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p4, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 191
@@ -346,7 +346,7 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/huawei/ims/ImsCallSessionListenerProxy$7;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+    invoke-direct/range {v0 .. v5}, Lcom/huawei/ims/ImsCallSessionListenerProxy$7;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
 
     .line 206
     .local v0, "r":Ljava/lang/Runnable;
@@ -387,10 +387,10 @@
     return-void
 .end method
 
-.method public callSessionHoldFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionHoldFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 274
@@ -404,7 +404,7 @@
     .line 277
     new-instance v0, Lcom/huawei/ims/ImsCallSessionListenerProxy$10;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$10;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$10;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 287
     .local v0, "r":Ljava/lang/Runnable;
@@ -454,10 +454,10 @@
     return-void
 .end method
 
-.method public callSessionInviteParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionInviteParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 487
@@ -492,10 +492,10 @@
     return-void
 .end method
 
-.method public callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 427
@@ -509,7 +509,7 @@
     .line 430
     new-instance v0, Lcom/huawei/ims/ImsCallSessionListenerProxy$17;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$17;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$17;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 441
     .local v0, "r":Ljava/lang/Runnable;
@@ -599,20 +599,20 @@
     return-void
 .end method
 
-.method public callSessionRemoveParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionRemoveParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 490
     return-void
 .end method
 
-.method public callSessionResumeFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionResumeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 332
@@ -626,7 +626,7 @@
     .line 335
     new-instance v0, Lcom/huawei/ims/ImsCallSessionListenerProxy$13;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$13;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$13;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 345
     .local v0, "r":Ljava/lang/Runnable;
@@ -696,10 +696,10 @@
     return-void
 .end method
 
-.method public callSessionStartFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionStartFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reason"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reason"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 58
@@ -713,7 +713,7 @@
     .line 61
     new-instance v0, Lcom/huawei/ims/ImsCallSessionListenerProxy$1;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$1;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$1;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 71
     .local v0, "r":Ljava/lang/Runnable;
@@ -780,10 +780,10 @@
     return-void
 .end method
 
-.method public callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reason"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reason"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 122
@@ -797,7 +797,7 @@
     .line 125
     new-instance v0, Lcom/huawei/ims/ImsCallSessionListenerProxy$4;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$4;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/huawei/ims/ImsCallSessionListenerProxy$4;-><init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 136
     .local v0, "r":Ljava/lang/Runnable;
@@ -838,10 +838,10 @@
     return-void
 .end method
 
-.method public callSessionUpdateFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionUpdateFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 468

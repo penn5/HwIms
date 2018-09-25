@@ -114,7 +114,7 @@
     .end local v1    # "t":Ljava/lang/Throwable;
     :pswitch_2
     :try_start_1
-    new-instance v0, Lcom/android/ims/ImsReasonInfo;
+    new-instance v0, Landroid/telephony/ims/ImsReasonInfo;
 
     .line 1161
     const/16 v2, 0x3e8
@@ -125,13 +125,13 @@
     const/4 v4, 0x0
 
     .line 1160
-    invoke-direct {v0, v2, v3, v4}, Lcom/android/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v0, v2, v3, v4}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 1163
-    .local v0, "imsReasonInfo":Lcom/android/ims/ImsReasonInfo;
+    .local v0, "imsReasonInfo":Landroid/telephony/ims/ImsReasonInfo;
     iget-object v2, p0, Lcom/huawei/ims/ImsServiceSub$ImsServiceSubHandler$1;->val$listener:Lcom/android/ims/internal/IImsRegistrationListener;
 
-    invoke-interface {v2, v0}, Lcom/android/ims/internal/IImsRegistrationListener;->registrationDisconnected(Lcom/android/ims/ImsReasonInfo;)V
+    invoke-interface {v2, v0}, Lcom/android/ims/internal/IImsRegistrationListener;->registrationDisconnected(Landroid/telephony/ims/ImsReasonInfo;)V
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
 
