@@ -3659,20 +3659,20 @@
     const/4 v0, 0x0
 
     .line 647
-    .local v0, "reasonInfo":Landroid/telephony/ims/ImsReasonInfo;
-    new-instance v0, Landroid/telephony/ims/ImsReasonInfo;
+    .local v0, "reasonInfo":Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v0, Landroid/telephony/ims/compat/ImsReasonInfo;
 
-    .end local v0    # "reasonInfo":Landroid/telephony/ims/ImsReasonInfo;
+    .end local v0    # "reasonInfo":Landroid/telephony/ims/compat/ImsReasonInfo;
     invoke-direct {p0, p6}, Lcom/huawei/ims/ImsCallSessionImpl;->transHandoverErrorCode(Ljava/lang/String;)I
 
     move-result v1
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2, p7}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v0, v1, v2, p7}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 648
-    .local v0, "reasonInfo":Landroid/telephony/ims/ImsReasonInfo;
+    .local v0, "reasonInfo":Landroid/telephony/ims/compat/ImsReasonInfo;
     iget-object v1, p0, Lcom/huawei/ims/ImsCallSessionImpl;->mListenerProxy:Lcom/huawei/ims/ImsCallSessionListenerProxy;
 
     if-eqz v1, :cond_1
@@ -3687,7 +3687,7 @@
     .line 650
     iget-object v1, p0, Lcom/huawei/ims/ImsCallSessionImpl;->mListenerProxy:Lcom/huawei/ims/ImsCallSessionListenerProxy;
 
-    invoke-virtual {v1, p0, p2, p3, v0}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionHandover(Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
+    invoke-virtual {v1, p0, p2, p3, v0}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionHandover(Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/compat/ImsReasonInfo;)V
 
     .line 660
     :cond_1
@@ -3698,7 +3698,7 @@
     :cond_2
     iget-object v1, p0, Lcom/huawei/ims/ImsCallSessionImpl;->mListenerProxy:Lcom/huawei/ims/ImsCallSessionListenerProxy;
 
-    invoke-virtual {v1, p0, p2, p3, v0}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
+    invoke-virtual {v1, p0, p2, p3, v0}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/compat/ImsReasonInfo;)V
 
     goto :goto_0
 .end method
@@ -6100,14 +6100,14 @@
     iget-object v4, p0, Lcom/huawei/ims/ImsCallSessionImpl;->mListenerProxy:Lcom/huawei/ims/ImsCallSessionListenerProxy;
 
     .line 550
-    new-instance v5, Landroid/telephony/ims/ImsReasonInfo;
+    new-instance v5, Landroid/telephony/ims/compat/ImsReasonInfo;
 
     iget v6, p0, Lcom/huawei/ims/ImsCallSessionImpl;->mDisconnCause:I
 
-    invoke-direct {v5, v6, v7}, Landroid/telephony/ims/ImsReasonInfo;-><init>(II)V
+    invoke-direct {v5, v6, v7}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(II)V
 
     .line 549
-    invoke-virtual {v4, p0, v5}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
+    invoke-virtual {v4, p0, v5}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
 
     goto :goto_3
 

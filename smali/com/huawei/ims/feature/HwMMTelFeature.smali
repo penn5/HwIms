@@ -1,5 +1,5 @@
 .class public Lcom/huawei/ims/feature/HwMMTelFeature;
-.super Landroid/telephony/ims/feature/MMTelFeature;
+.super Landroid/telephony/ims/compat/feature/MMTelFeature;
 .source "HwMMTelFeature.java"
 
 
@@ -43,7 +43,7 @@
     const/4 v3, 0x2
 
     .line 41
-    invoke-direct {p0}, Landroid/telephony/ims/feature/MMTelFeature;-><init>()V
+    invoke-direct {p0}, Landroid/telephony/ims/compat/feature/MMTelFeature;-><init>()V
 
     .line 36
     const/4 v1, 0x0

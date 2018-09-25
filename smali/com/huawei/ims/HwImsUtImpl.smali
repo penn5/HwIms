@@ -17744,17 +17744,17 @@
     invoke-direct {p0, v1}, Lcom/huawei/ims/HwImsUtImpl;->logd(Ljava/lang/String;)V
 
     .line 4418
-    new-instance v0, Landroid/telephony/ims/ImsReasonInfo;
+    new-instance v0, Landroid/telephony/ims/compat/ImsReasonInfo;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p2, v1}, Landroid/telephony/ims/ImsReasonInfo;-><init>(II)V
+    invoke-direct {v0, p2, v1}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(II)V
 
     .line 4420
-    .local v0, "error":Landroid/telephony/ims/ImsReasonInfo;
+    .local v0, "error":Landroid/telephony/ims/compat/ImsReasonInfo;
     iget-object v1, p0, Lcom/huawei/ims/HwImsUtImpl;->mListenerProxy:Lcom/huawei/ims/ImsUtListenerProxy;
 
-    invoke-virtual {v1, p0, p1, v0}, Lcom/huawei/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/ImsReasonInfo;)V
+    invoke-virtual {v1, p0, p1, v0}, Lcom/huawei/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/compat/ImsReasonInfo;)V
 
     .line 4421
     return-void
