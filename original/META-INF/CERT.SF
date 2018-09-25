@@ -1,0 +1,59 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+X-Android-APK-Signed: 2
+SHA1-Digest-Manifest: NXKNh2WVBQP6y2aODfIYU09j98k=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 9ACukrD94C/PMc53DQ2Ez9V4EIo=
+
+Name: lib/arm64-v8a/libssltsc.so
+SHA1-Digest: q6M41Z/fBccMnDSWkcSWARzLMiU=
+
+Name: res/xml/hw_ims_config.xml
+SHA1-Digest: 94laTseKdMdUyDbtP7oGVzR5kgc=
+
+Name: lib/arm64-v8a/libhw_media.so
+SHA1-Digest: k2ftUpB7sgjBKQ1xyC0jW7r0mqI=
+
+Name: lib/arm64-v8a/libsci_ssconf.so
+SHA1-Digest: e73u9U2eZ0Ow91t3CVUm43rBvRA=
+
+Name: lib/arm64-v8a/libvsc.so
+SHA1-Digest: TBfPIyXNGpY+ZNKoH6Yqm/LBn2k=
+
+Name: lib/arm64-v8a/liblogin.so
+SHA1-Digest: 2Nm7WTtfS/NoJHnvsyr01pqiDMw=
+
+Name: lib/arm64-v8a/libsci.so
+SHA1-Digest: c+6X5T5rp6NQC3avQE0tKq5C2zQ=
+
+Name: lib/arm64-v8a/libtls_default.so
+SHA1-Digest: 1xCHnBkmZJ9ncD4objHQTSOm2PA=
+
+Name: lib/arm64-v8a/libut.so
+SHA1-Digest: cHrY2gurrT+B/tSk18eIIOe3WdQ=
+
+Name: lib/arm64-v8a/libhw_sys.so
+SHA1-Digest: mDYbSIgTp4+hwQQu+04OdNUm3qc=
+
+Name: lib/arm64-v8a/libVT80.so
+SHA1-Digest: vY50Xn1UFDAAnM7vFHvM1jfS0LM=
+
+Name: lib/arm64-v8a/libmvd_hme_vt.so
+SHA1-Digest: ryNolbxeKgQWRZFa7iN75X6Pqx8=
+
+Name: lib/arm64-v8a/libsci_tls_default.so
+SHA1-Digest: TehX5b7pLrE9T2g6zbPvgw/9zdc=
+
+Name: lib/arm64-v8a/libHME-Video.so
+SHA1-Digest: bGOhr6H5QZOktWu2dBlz2h7XZEA=
+
+Name: resources.arsc
+SHA1-Digest: mGLpO7Hcb6EstJ/3dPThuaOdZLc=
+
+Name: classes.dex
+SHA1-Digest: Snd6DALU/hfzEAzLm/2jcuUsuno=
+
+Name: lib/arm64-v8a/libcryptotsc.so
+SHA1-Digest: +qyMMVutmWDarsJaMLaQyxdk4gQ=
+

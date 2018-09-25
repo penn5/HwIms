@@ -1,0 +1,57 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: AndroidManifest.xml
+SHA1-Digest: 0CQNVqmYitQV7K1l7EBTo2xjwSI=
+
+Name: lib/arm64-v8a/libssltsc.so
+SHA1-Digest: jdYGxF0Zwq0QzW+1Ab0YdUvZ9rE=
+
+Name: res/xml/hw_ims_config.xml
+SHA1-Digest: KnHS9jq1bKt2f4B7KmFMGKwW18g=
+
+Name: lib/arm64-v8a/libhw_media.so
+SHA1-Digest: /0itHCfy1ojzDUzt86n+0pb6Hgs=
+
+Name: lib/arm64-v8a/libsci_ssconf.so
+SHA1-Digest: /2iX5y7dqlK6X5w4uIzRUkQdAHo=
+
+Name: lib/arm64-v8a/libvsc.so
+SHA1-Digest: h89/QoPy7NTfgpdyXz/LFTBP0zw=
+
+Name: lib/arm64-v8a/liblogin.so
+SHA1-Digest: s1u+UMjpkXXNIhVz5tPJNu44KnU=
+
+Name: lib/arm64-v8a/libsci.so
+SHA1-Digest: Wl92iTezJt5Cl+8vgpZn54jM5ak=
+
+Name: lib/arm64-v8a/libtls_default.so
+SHA1-Digest: EJMrMv+qfkmeOXBe2n6dmYL8l7c=
+
+Name: lib/arm64-v8a/libut.so
+SHA1-Digest: pIPvD3F5M29TCwKEuxa7RGV/vgg=
+
+Name: lib/arm64-v8a/libhw_sys.so
+SHA1-Digest: ostMvs7klvhAbC389Li8HJxPCMc=
+
+Name: lib/arm64-v8a/libVT80.so
+SHA1-Digest: MxIHaPs6FheT+PTiMYyP0PWNTfI=
+
+Name: lib/arm64-v8a/libmvd_hme_vt.so
+SHA1-Digest: hF0MwWAcap3/5suIjZZHb8Ag/Mc=
+
+Name: lib/arm64-v8a/libsci_tls_default.so
+SHA1-Digest: imAmntHC1+L4RgZO62W9aM1X47A=
+
+Name: lib/arm64-v8a/libHME-Video.so
+SHA1-Digest: Z4JAlQoqGCfjhb64HGbKe/cDF6Y=
+
+Name: resources.arsc
+SHA1-Digest: BYgF0D5nA2KhXC+FeiEpeEgxI/M=
+
+Name: classes.dex
+SHA1-Digest: r7x3peKBSLsjEHVOtq2YUtiNnFU=
+
+Name: lib/arm64-v8a/libcryptotsc.so
+SHA1-Digest: cuBRreSMOkb51G5zRXe4fWAxP3U=
+
