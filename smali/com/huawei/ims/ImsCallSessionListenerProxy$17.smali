@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+    value = Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,13 +20,13 @@
 # instance fields
 .field final synthetic this$0:Lcom/huawei/ims/ImsCallSessionListenerProxy;
 
-.field final synthetic val$reasonInfo:Landroid/telephony/ims/compat/ImsReasonInfo;
+.field final synthetic val$reasonInfo:Landroid/telephony/ims/ImsReasonInfo;
 
 .field final synthetic val$session:Lcom/android/ims/internal/IImsCallSession;
 
 
 # direct methods
-.method constructor <init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+.method constructor <init>(Lcom/huawei/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "this$0"    # Lcom/huawei/ims/ImsCallSessionListenerProxy;
 
@@ -36,7 +36,7 @@
 
     iput-object p2, p0, Lcom/huawei/ims/ImsCallSessionListenerProxy$17;->val$session:Lcom/android/ims/internal/IImsCallSession;
 
-    iput-object p3, p0, Lcom/huawei/ims/ImsCallSessionListenerProxy$17;->val$reasonInfo:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iput-object p3, p0, Lcom/huawei/ims/ImsCallSessionListenerProxy$17;->val$reasonInfo:Landroid/telephony/ims/ImsReasonInfo;
 
     .line 430
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -66,9 +66,9 @@
 
     iget-object v2, p0, Lcom/huawei/ims/ImsCallSessionListenerProxy$17;->val$session:Lcom/android/ims/internal/IImsCallSession;
 
-    iget-object v3, p0, Lcom/huawei/ims/ImsCallSessionListenerProxy$17;->val$reasonInfo:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v3, p0, Lcom/huawei/ims/ImsCallSessionListenerProxy$17;->val$reasonInfo:Landroid/telephony/ims/ImsReasonInfo;
 
-    invoke-interface {v1, v2, v3}, Lcom/android/ims/internal/IImsCallSessionListener;->callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-interface {v1, v2, v3}, Lcom/android/ims/internal/IImsCallSessionListener;->callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 

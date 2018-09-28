@@ -211,16 +211,16 @@
     check-cast v6, Lcom/android/ims/internal/IImsCallSession;
 
     .line 714
-    new-instance v8, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v8, Landroid/telephony/ims/ImsReasonInfo;
 
     .line 715
     const-string/jumbo v9, "Add Participant Failed"
 
     .line 714
-    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 712
-    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionInviteParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionInviteParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     goto :goto_0
 
@@ -381,16 +381,16 @@
     check-cast v6, Lcom/android/ims/internal/IImsCallSession;
 
     .line 747
-    new-instance v8, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v8, Landroid/telephony/ims/ImsReasonInfo;
 
     .line 748
     const-string/jumbo v9, "Hold Failed"
 
     .line 747
-    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 746
-    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionHoldFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionHoldFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -433,16 +433,16 @@
     check-cast v6, Lcom/android/ims/internal/IImsCallSession;
 
     .line 759
-    new-instance v8, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v8, Landroid/telephony/ims/ImsReasonInfo;
 
     .line 760
     const-string/jumbo v9, "Resume Failed"
 
     .line 759
-    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 758
-    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionResumeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionResumeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -485,16 +485,16 @@
     check-cast v6, Lcom/android/ims/internal/IImsCallSession;
 
     .line 771
-    new-instance v8, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v8, Landroid/telephony/ims/ImsReasonInfo;
 
     .line 772
     const-string/jumbo v9, "Conference Failed"
 
     .line 771
-    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 770
-    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 773
     iget-object v6, p0, Lcom/huawei/ims/ImsCallSessionImpl$ImsCallSessionImplHandler;->this$0:Lcom/huawei/ims/ImsCallSessionImpl;
@@ -628,16 +628,16 @@
     check-cast v6, Lcom/android/ims/internal/IImsCallSession;
 
     .line 803
-    new-instance v8, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v8, Landroid/telephony/ims/ImsReasonInfo;
 
     .line 804
     const-string/jumbo v9, "User Rejected"
 
     .line 803
-    invoke-direct {v8, v11, v10, v9}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v8, v11, v10, v9}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 802
-    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionStartFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionStartFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 805
     iget-object v6, p0, Lcom/huawei/ims/ImsCallSessionImpl$ImsCallSessionImplHandler;->this$0:Lcom/huawei/ims/ImsCallSessionImpl;
@@ -685,16 +685,16 @@
     check-cast v6, Lcom/android/ims/internal/IImsCallSession;
 
     .line 815
-    new-instance v8, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v8, Landroid/telephony/ims/ImsReasonInfo;
 
     .line 816
     const-string/jumbo v9, "Deflect Failed"
 
     .line 815
-    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v8, v10, v10, v9}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 814
-    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionDeflectFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-virtual {v7, v6, v8}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionDeflectFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -1004,12 +1004,12 @@
     invoke-static {v6, v7}, Lcom/huawei/ims/ImsCallSessionImpl;->-wrap3(Lcom/huawei/ims/ImsCallSessionImpl;Ljava/lang/String;)V
 
     .line 901
-    new-instance v5, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v5, Landroid/telephony/ims/ImsReasonInfo;
 
-    invoke-direct {v5, v1, v10, v4}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v5, v1, v10, v4}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 903
-    .local v5, "reasonInfo":Landroid/telephony/ims/compat/ImsReasonInfo;
+    .local v5, "reasonInfo":Landroid/telephony/ims/ImsReasonInfo;
     iget-object v6, p0, Lcom/huawei/ims/ImsCallSessionImpl$ImsCallSessionImplHandler;->this$0:Lcom/huawei/ims/ImsCallSessionImpl;
 
     invoke-static {v6}, Lcom/huawei/ims/ImsCallSessionImpl;->-get4(Lcom/huawei/ims/ImsCallSessionImpl;)Lcom/huawei/ims/ImsCallSessionListenerProxy;
@@ -1018,12 +1018,12 @@
 
     iget-object v7, p0, Lcom/huawei/ims/ImsCallSessionImpl$ImsCallSessionImplHandler;->this$0:Lcom/huawei/ims/ImsCallSessionImpl;
 
-    invoke-virtual {v6, v7, v5}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-virtual {v6, v7, v5}, Lcom/huawei/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
     .line 878
-    .end local v5    # "reasonInfo":Landroid/telephony/ims/compat/ImsReasonInfo;
+    .end local v5    # "reasonInfo":Landroid/telephony/ims/ImsReasonInfo;
     .restart local v4    # "message":Ljava/lang/String;
     :cond_c
     iget-object v2, v0, Landroid/os/AsyncResult;->result:Ljava/lang/Object;

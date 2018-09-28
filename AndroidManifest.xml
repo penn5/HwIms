@@ -6,6 +6,7 @@
     <permission android:name="com.android.huawei.permission.mt.missing.tips" android:protectionLevel="signatureOrSystem"/>
     <permission android:name="com.huawei.ims.permission.GET_IMS_SERVICE_STATE" android:protectionLevel="signatureOrSystem"/>
     <permission android:name="com.huawei.ims.permission.GET_IMS_SERVICE_VOWIFI_STATE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.huawei.ims.permission.GET_IMS_SERVICE_STATE"/>
     <uses-permission android:name="com.huawei.ims.permission.GET_IMS_SERVICE_VOWIFI_STATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <permission android:name="com.huawei.ims.permission.RECEIVE_DMPROVIDER_BROADCAST" android:protectionLevel="signatureOrSystem"/>
@@ -16,7 +17,7 @@
     <protected-broadcast android:name="com.android.ims.IMS_SERVICE_DOWN"/>
     <uses-permission android:name="com.huawei.android.permission.GET_CHR_DATA"/>
     <application android:allowBackup="false" android:label="@string/app_label" android:process="com.huawei.telephony.ims">
-        <service android:directBootAware="true" android:enabled="true" android:exported="false" android:name=".HwImsService" android:permission="android.permission.BIND_IMS_SERVICE" android:process="com.android.phone">
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name=".HwImsService" android:permission="android.permission.BIND_IMS_SERVICE" android:process="com.android.phone">
             <meta-data android:name="android.telephony.ims.MMTEL_FEATURE" android:value="true"/>
             <intent-filter>
                 <action android:name="android.telephony.ims.ImsService"/>

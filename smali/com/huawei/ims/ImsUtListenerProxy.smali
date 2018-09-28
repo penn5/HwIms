@@ -247,11 +247,11 @@
     return-void
 .end method
 
-.method public utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/compat/ImsReasonInfo;)V
+.method public utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "ut"    # Lcom/android/ims/internal/IImsUt;
     .param p2, "id"    # I
-    .param p3, "error"    # Landroid/telephony/ims/compat/ImsReasonInfo;
+    .param p3, "error"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 90
@@ -265,7 +265,7 @@
     .line 93
     new-instance v0, Lcom/huawei/ims/ImsUtListenerProxy$4;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/huawei/ims/ImsUtListenerProxy$4;-><init>(Lcom/huawei/ims/ImsUtListenerProxy;Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/huawei/ims/ImsUtListenerProxy$4;-><init>(Lcom/huawei/ims/ImsUtListenerProxy;Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/ImsReasonInfo;)V
 
     .line 103
     .local v0, "r":Ljava/lang/Runnable;
@@ -277,11 +277,11 @@
     return-void
 .end method
 
-.method public utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/compat/ImsReasonInfo;)V
+.method public utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "ut"    # Lcom/android/ims/internal/IImsUt;
     .param p2, "id"    # I
-    .param p3, "error"    # Landroid/telephony/ims/compat/ImsReasonInfo;
+    .param p3, "error"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 47
@@ -295,7 +295,7 @@
     .line 50
     new-instance v0, Lcom/huawei/ims/ImsUtListenerProxy$2;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/huawei/ims/ImsUtListenerProxy$2;-><init>(Lcom/huawei/ims/ImsUtListenerProxy;Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/compat/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/huawei/ims/ImsUtListenerProxy$2;-><init>(Lcom/huawei/ims/ImsUtListenerProxy;Lcom/android/ims/internal/IImsUt;ILandroid/telephony/ims/ImsReasonInfo;)V
 
     .line 60
     .local v0, "r":Ljava/lang/Runnable;

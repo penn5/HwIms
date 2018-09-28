@@ -18,7 +18,7 @@
 # instance fields
 .field public callDetails:Lcom/huawei/ims/CallDetails;
 
-.field public callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+.field public callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
 .field public peerVideoSupport:I
 
@@ -62,11 +62,11 @@
     iput-object v0, p0, Lcom/huawei/ims/DriverCallIms;->callDetails:Lcom/huawei/ims/CallDetails;
 
     .line 67
-    new-instance v0, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v0, Landroid/telephony/ims/ImsReasonInfo;
 
-    invoke-direct {v0}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>()V
+    invoke-direct {v0}, Landroid/telephony/ims/ImsReasonInfo;-><init>()V
 
-    iput-object v0, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iput-object v0, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
     .line 68
     iget-object v0, p1, Lcom/huawei/ims/DriverCallIms;->state:Lcom/huawei/ims/DriverCallIms$State;
@@ -162,11 +162,11 @@
     iput-object v0, p0, Lcom/huawei/ims/DriverCallIms;->callDetails:Lcom/huawei/ims/CallDetails;
 
     .line 45
-    new-instance v0, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v0, Landroid/telephony/ims/ImsReasonInfo;
 
-    invoke-direct {v0}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>()V
+    invoke-direct {v0}, Landroid/telephony/ims/ImsReasonInfo;-><init>()V
 
-    iput-object v0, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iput-object v0, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
     .line 46
     iget v0, p1, Lvendor/huawei/hardware/radio/V1_0/RILImsCall;->state:I
@@ -807,36 +807,36 @@
 
     .line 116
     .local v0, "hasChanged":Z
-    iget-object v1, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v1, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
     if-eqz v1, :cond_1
 
     .line 117
-    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
     if-nez v1, :cond_3
 
     .line 118
-    new-instance v1, Landroid/telephony/ims/compat/ImsReasonInfo;
+    new-instance v1, Landroid/telephony/ims/ImsReasonInfo;
 
-    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget v2, v2, Landroid/telephony/ims/compat/ImsReasonInfo;->mCode:I
+    iget v2, v2, Landroid/telephony/ims/ImsReasonInfo;->mCode:I
 
     .line 119
-    iget-object v3, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v3, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget v3, v3, Landroid/telephony/ims/compat/ImsReasonInfo;->mExtraCode:I
+    iget v3, v3, Landroid/telephony/ims/ImsReasonInfo;->mExtraCode:I
 
     .line 120
-    iget-object v4, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v4, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget-object v4, v4, Landroid/telephony/ims/compat/ImsReasonInfo;->mExtraMessage:Ljava/lang/String;
+    iget-object v4, v4, Landroid/telephony/ims/ImsReasonInfo;->mExtraMessage:Ljava/lang/String;
 
     .line 118
-    invoke-direct {v1, v2, v3, v4}, Landroid/telephony/ims/compat/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v1, v2, v3, v4}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
-    iput-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iput-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
     .line 133
     :cond_1
@@ -866,55 +866,55 @@
     .line 122
     .restart local v0    # "hasChanged":Z
     :cond_3
-    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget v1, v1, Landroid/telephony/ims/compat/ImsReasonInfo;->mCode:I
+    iget v1, v1, Landroid/telephony/ims/ImsReasonInfo;->mCode:I
 
-    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget v2, v2, Landroid/telephony/ims/compat/ImsReasonInfo;->mCode:I
+    iget v2, v2, Landroid/telephony/ims/ImsReasonInfo;->mCode:I
 
     if-eq v1, v2, :cond_4
 
     .line 123
-    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget v2, v2, Landroid/telephony/ims/compat/ImsReasonInfo;->mCode:I
+    iget v2, v2, Landroid/telephony/ims/ImsReasonInfo;->mCode:I
 
-    iput v2, v1, Landroid/telephony/ims/compat/ImsReasonInfo;->mCode:I
+    iput v2, v1, Landroid/telephony/ims/ImsReasonInfo;->mCode:I
 
     .line 125
     :cond_4
-    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget v1, v1, Landroid/telephony/ims/compat/ImsReasonInfo;->mExtraCode:I
+    iget v1, v1, Landroid/telephony/ims/ImsReasonInfo;->mExtraCode:I
 
-    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget v2, v2, Landroid/telephony/ims/compat/ImsReasonInfo;->mExtraCode:I
+    iget v2, v2, Landroid/telephony/ims/ImsReasonInfo;->mExtraCode:I
 
     if-eq v1, v2, :cond_5
 
     .line 126
-    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget v2, v2, Landroid/telephony/ims/compat/ImsReasonInfo;->mExtraCode:I
+    iget v2, v2, Landroid/telephony/ims/ImsReasonInfo;->mExtraCode:I
 
-    iput v2, v1, Landroid/telephony/ims/compat/ImsReasonInfo;->mExtraCode:I
+    iput v2, v1, Landroid/telephony/ims/ImsReasonInfo;->mExtraCode:I
 
     .line 129
     :cond_5
-    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v1, p0, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/compat/ImsReasonInfo;
+    iget-object v2, p1, Lcom/huawei/ims/DriverCallIms;->callFailCause:Landroid/telephony/ims/ImsReasonInfo;
 
-    iget-object v2, v2, Landroid/telephony/ims/compat/ImsReasonInfo;->mExtraMessage:Ljava/lang/String;
+    iget-object v2, v2, Landroid/telephony/ims/ImsReasonInfo;->mExtraMessage:Ljava/lang/String;
 
-    iput-object v2, v1, Landroid/telephony/ims/compat/ImsReasonInfo;->mExtraMessage:Ljava/lang/String;
+    iput-object v2, v1, Landroid/telephony/ims/ImsReasonInfo;->mExtraMessage:Ljava/lang/String;
 
     goto :goto_0
 .end method
