@@ -1,5 +1,5 @@
 .class public Lcom/huawei/ims/HwImsService;
-.super Landroid/telephony/ims/ImsService;
+.super Landroid/telephony/ims/compat/ImsService;
 .source "HwImsService.java"
 
 
@@ -21,7 +21,7 @@
 
     .prologue
     .line 12
-    invoke-direct {p0}, Landroid/telephony/ims/ImsService;-><init>()V
+    invoke-direct {p0}, Landroid/telephony/ims/compat/ImsService;-><init>()V
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     .prologue
     .line 36
-    invoke-super {p0}, Landroid/telephony/ims/ImsService;->onCreate()V
+    invoke-super {p0}, Landroid/telephony/ims/compat/ImsService;->onCreate()V
 
     .line 37
     const-string/jumbo v2, "HwImsService"
@@ -134,7 +134,7 @@
     return-void
 .end method
 
-.method public onCreateMMTelImsFeature(I)Landroid/telephony/ims/feature/MMTelFeature;
+.method public onCreateMMTelImsFeature(I)Landroid/telephony/ims/compat/feature/MMTelFeature;
     .locals 5
     .param p1, "subId"    # I
 
@@ -198,7 +198,7 @@
     invoke-direct {v0, p0, p1, v2}, Lcom/huawei/ims/feature/HwMMTelFeature;-><init>(Landroid/content/Context;ILcom/huawei/ims/ImsServiceSub;)V
 
     .line 84
-    .local v0, "hwMMTelFeature":Landroid/telephony/ims/feature/MMTelFeature;
+    .local v0, "hwMMTelFeature":Landroid/telephony/ims/compat/feature/MMTelFeature;
     const-string/jumbo v2, "HwImsService"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -272,7 +272,7 @@
 
     .line 64
     :cond_0
-    invoke-super {p0}, Landroid/telephony/ims/ImsService;->onDestroy()V
+    invoke-super {p0}, Landroid/telephony/ims/compat/ImsService;->onDestroy()V
 
     .line 65
     return-void
