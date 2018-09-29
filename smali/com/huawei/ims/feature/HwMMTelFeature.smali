@@ -1,5 +1,5 @@
 .class public Lcom/huawei/ims/feature/HwMMTelFeature;
-.super Landroid/telephony/ims/feature/compat/MMTelFeature;
+.super Landroid/telephony/ims/compat/feature/MMTelFeature;
 .source "HwMMTelFeature.java"
 
 
