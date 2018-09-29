@@ -31,6 +31,8 @@
 
 .field private mUiccController:Lcom/android/internal/telephony/uicc/UiccController;
 
+.field public mySlotId:I
+
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILcom/huawei/ims/ImsServiceSub;)V
@@ -63,8 +65,13 @@
     .line 44
     iput-object p3, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mImsServiceSub:Lcom/huawei/ims/ImsServiceSub;
 
-    .line 45
-    iput p2, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mSlotId:I
+    .line 43
+    iput p2, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mySlotId:I
+#HwMMTelFeature.mSlotId doesn't actually exist; it is inherited from the superclass ImsFeature in the framework
+#However, in ImsFeature, mSlotId is private
+#Luckily, there's a public method to set it!
+    invoke-virtual {p0, p2}, Lcom/huawei/ims/feature/HwMMTelFeature;->setSlotId(I)V
+
 
     .line 46
     new-instance v1, Ljava/lang/StringBuilder;
@@ -77,9 +84,10 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mSlotId:I
+#What's the point of this when it's already stored in p2, after we set it (higher up)???
+    iget v2, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mySlotId:I
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -157,11 +165,11 @@
     iput v1, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mImsPhoneId:I
 
     .line 53
-    iget v1, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mSlotId:I
+    iget v1, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mySlotId:I
 
     iget v2, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mImsPhoneId:I
 
-    if-ne v1, v2, :cond_0
+    if-ne p2, v2, :cond_0
 
     .line 54
     invoke-virtual {p0, v3}, Lcom/huawei/ims/feature/HwMMTelFeature;->setFeatureState(I)V
@@ -334,7 +342,7 @@
     invoke-virtual {v3, v4}, Lcom/huawei/ims/ImsServiceSub;->registerForPhoneId(I)V
 
     .line 124
-    iget v3, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mSlotId:I
+    iget v3, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mySlotId:I
 
     iget v4, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mImsPhoneId:I
 
@@ -460,7 +468,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mSlotId:I
+    iget v1, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mySlotId:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -498,7 +506,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mSlotId:I
+    iget v1, p0, Lcom/huawei/ims/feature/HwMMTelFeature;->mySlotId:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
